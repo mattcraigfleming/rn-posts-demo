@@ -8,8 +8,10 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
+import {useNavigation} from 'react-navigation-hooks';
 import axios from 'axios';
 import {fetchPosts} from '../actions';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 
 export default function Posts(props) {
   const dispatch = useDispatch();
@@ -20,7 +22,8 @@ export default function Posts(props) {
   //Access Redux Store State
   const postsReducer = useSelector(state => state.postsReducer);
   const {posts} = postsReducer;
-  console.log(posts);
+
+  const {navigate} = useNavigation();
 
   // Acts as componentDidMount with empty array
   useEffect(() => getPosts(), []);
@@ -41,7 +44,9 @@ export default function Posts(props) {
   const renderItem = ({item, index}) => {
     return (
       <View style={styles.row}>
-        <Text style={styles.title}>{item.title}</Text>
+        <TouchableOpacity onPress={() => navigate('Post', {id: item.id})}>
+          <Text style={styles.title}>{item.title}</Text>
+        </TouchableOpacity>
       </View>
     );
   };
