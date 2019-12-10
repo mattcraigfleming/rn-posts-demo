@@ -4,10 +4,10 @@ import {FETCH_POSTS} from './actions';
 
 let initialState = {posts: []};
 
-const getPosts = (state = initialState, action) => {
+const postsReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_POSTS:
-      return {...state, posts: action.posts};
+      return {...state, posts: [...action.data]};
     default:
       return state;
   }
@@ -15,8 +15,7 @@ const getPosts = (state = initialState, action) => {
 
 // Combine all the reducers
 const rootReducer = combineReducers({
-  getPosts,
-  // ,[ANOTHER REDUCER], [ANOTHER REDUCER] ....
+  postsReducer,
 });
 
 export default rootReducer;

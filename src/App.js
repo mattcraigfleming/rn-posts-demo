@@ -7,11 +7,11 @@ import Posts from './components/Posts';
 
 const App = () => {
   return (
-    <Provider store={store}>
-      <SafeAreaView style={styles.body}>
+    <SafeAreaView style={styles.body}>
+      <Provider store={store}>
         <Posts />
-      </SafeAreaView>
-    </Provider>
+      </Provider>
+    </SafeAreaView>
   );
 };
 
