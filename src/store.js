@@ -9,9 +9,9 @@ import reducers from './reducers.js';
 const persistConfig = {
   // Root
   key: 'root',
-  // Storage Method (React Native)
+  // Storage Method
   storage: AsyncStorage,
-  // Whitelist (Save Specific Reducers)
+  // Whitelist (Save Posts Reducer Data)
   whitelist: ['postsReducer'],
 };
 // Middleware: Redux Persist Persisted Reducer
