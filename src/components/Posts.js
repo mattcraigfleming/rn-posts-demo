@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
   row: {
     borderBottomWidth: 1,
     borderColor: '#ccc',
-    padding: 10,
+    padding: 16,
   },
 
   title: {
