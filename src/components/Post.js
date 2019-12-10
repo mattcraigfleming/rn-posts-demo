@@ -21,14 +21,14 @@ export default function Post() {
 
   useEffect(() => getAuthor(), []);
 
-  // Retrieve Posts Data
+  // Retrieve Author Data via ID
   const getAuthor = () => {
     setIsFetching(true);
-    let url = `http://jsonplaceholder.typicode.com/users?id=${id}`;
+    let url = `http://jsonplaceholder.typicode.com/users?id=${posts[id].userId}`;
     axios
       .get(url)
       .then(res => res.data)
-      .then(data => dispatch(fetchAuthor(data)))
+      .then(data => dispatch(fetchAuthor(data[0])))
       .catch(error => alert(error.message))
       .finally(() => setIsFetching(false));
   };
@@ -45,7 +45,9 @@ export default function Post() {
         <Text>Post Details Screen</Text>
         <Text>Title: {posts[id].title}</Text>
         <Text>Body: {posts[id].body}</Text>
-        <Text>Author: {author[0].name}</Text>
+        <Text>
+          Author: {author.name}, {author.email}
+        </Text>
       </View>
     );
   }
