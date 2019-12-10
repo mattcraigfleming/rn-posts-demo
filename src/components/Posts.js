@@ -7,6 +7,7 @@ import {
   Text,
   ActivityIndicator,
 } from 'react-native';
+import NetInfo from '@react-native-community/netinfo';
 import {useDispatch, useSelector} from 'react-redux';
 import {useNavigation} from 'react-navigation-hooks';
 import axios from 'axios';
@@ -26,7 +27,13 @@ export default function Posts(props) {
   const {navigate} = useNavigation();
 
   // Acts as componentDidMount with empty array
-  useEffect(() => getPosts(), []);
+  useEffect(() => {
+    NetInfo.fetch().then(state => {
+      if (state.isConnected) {
+        getPosts();
+      }
+    });
+  }, []);
 
   // Retrieve Posts Data
   const getPosts = () => {

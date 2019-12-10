@@ -2,8 +2,9 @@ import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {View, Text, ActivityIndicator, StyleSheet} from 'react-native';
 import {useNavigationParam} from 'react-navigation-hooks';
+import NetInfo from '@react-native-community/netinfo';
 import axios from 'axios';
-import {fetchAuthor} from '../actions';
+import {fetchAuthors} from '../actions';
 
 export default function Post() {
   const dispatch = useDispatch();
@@ -19,7 +20,13 @@ export default function Post() {
   // id - 1 as posts array is 0 based
   const id = useNavigationParam('id') - 1;
 
-  useEffect(() => getAuthor(), []);
+  useEffect(() => {
+    NetInfo.fetch().then(state => {
+      if (state.isConnected) {
+        getAuthor();
+      }
+    });
+  }, []);
 
   // Retrieve Author Data via ID
   const getAuthor = () => {
@@ -28,7 +35,7 @@ export default function Post() {
     axios
       .get(url)
       .then(res => res.data)
-      .then(data => dispatch(fetchAuthor(data)))
+      .then(data => dispatch(fetchAuthors(data)))
       .catch(error => alert(error.message))
       .finally(() => setIsFetching(false));
   };
@@ -45,10 +52,9 @@ export default function Post() {
         <Text>Post Details Screen</Text>
         <Text>Title: {posts[id].title}</Text>
         <Text>Body: {posts[id].body}</Text>
-        <Text>
-          Author: {author[posts[id].userId - 1].name},{' '}
-          {author[posts[id].userId - 1].email}
-        </Text>
+        <View style={{paddingVertical: 10}} />
+        <Text>Author: {author[posts[id].userId - 1].name},</Text>
+        <Text>AuthorEmail: {author[posts[id].userId - 1].email}</Text>
       </View>
     );
   }

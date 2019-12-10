@@ -953,6 +953,11 @@
     eslint-plugin-react-native "3.6.0"
     prettier "1.16.4"
 
+"@react-native-community/netinfo@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/netinfo/-/netinfo-5.0.0.tgz#c8708558c9a116c138a43bed4bb0b4af85f111bc"
+  integrity sha512-MDvQ+jh9P1S8/CvxLyDqWFNc31oL5a2UkVtOyGFslLmxbO3Q4h/xFPM+b2NJ97GvQAsdhL18EpOWVu1AXodeFw==
+
 "@react-navigation/core@^3.5.1":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-3.5.1.tgz#7a2339fca3496979305fb3a8ab88c2ca8d8c214d"
@@ -5337,6 +5342,11 @@ react-native-gesture-handler@^1.5.2:
     hoist-non-react-statics "^2.3.1"
     invariant "^2.2.4"
     prop-types "^15.7.2"
+
+react-native-netinfo@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-netinfo/-/react-native-netinfo-1.1.0.tgz#343a4a9413006493f350bc7923688bb3315c3dce"
+  integrity sha512-muGzEvfCm9i+MF1qgPF1LsUmRxaTUWQ9i2TTbBoE/DBfsprv4Ds27iYLQvAgX5QzAMJm+iYKCq+3QN/hvPxrsQ==
 
 react-native-reanimated@^1.4.0:
   version "1.4.0"
