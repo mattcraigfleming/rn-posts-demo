@@ -11,7 +11,7 @@ $ git clone https://github.com/mattcraigfleming/rn-posts-demo.git || unzip
 # change directory to cloned app
 $ cd demo
 
-# install the dependencies with npm
+# install the dependencies with yarn
 $ yarn || npm install
 
 # start IOS emulator with running App
@@ -29,7 +29,7 @@ $ yarn ios || react-native run-ios
 
 You'll need to run this app:
 
-- `node` and `npm` (Use [NVM](https://github.com/creationix/nvm))
+- `node` and `or yarn` (Use [NVM](https://github.com/creationix/nvm))
 - Ensure you're running Node (`v8.9.4`+) and NPM (`5.6.0`+)
 - `react-native-cli: 2.0.1`
 - `react-native: 0.54.0`
