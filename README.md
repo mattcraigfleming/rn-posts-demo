@@ -1,6 +1,7 @@
 # react-native-tehnical-test
 
-:rocket: Post Listing App: A simple react-native app, using hooks combined with redux
+:rocket: A simple post listing app
+This demo was created using redux for state management, react navigation for navigation, react-native-netinfo to check device online/offline status, redux persist with Async storage for data persistance and Jest/Enzyme for automated testing.
 
 ### Quick start
 
@@ -22,6 +23,7 @@ $ yarn ios || react-native run-ios
 
 - [Dependencies](#dependencies)
 - [Developing](#developing)
+- [ClassDiagram](#ClassDiagram)
 - [Preview](#preview)
 
 ## Dependencies
@@ -52,7 +54,7 @@ You can run this app under dev mode on your iPhone device, through `Xcode`, foll
 
 > Please keep your Xcode updated in order to avoid any Xcode/Runtime version problem
 
-## Class diagram
+## ClassDiagram
 
  <img src="https://github.com/mattcraigfleming/rn-posts-demo/blob/master/screenshots/uml-class-diagram.png?raw=true" width="800">
 
