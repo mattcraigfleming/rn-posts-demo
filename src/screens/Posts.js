@@ -51,7 +51,8 @@ export default function Posts(props) {
   const renderItem = ({item, index}) => {
     return (
       <View style={styles.row}>
-        <TouchableOpacity onPress={() => navigate('Post', {id: item.id})}>
+        <TouchableOpacity
+          onPress={() => navigate('PostDetails', {id: item.id})}>
           <Text style={styles.title}>{item.title}</Text>
         </TouchableOpacity>
       </View>

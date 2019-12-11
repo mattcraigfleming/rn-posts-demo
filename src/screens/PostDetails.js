@@ -6,7 +6,7 @@ import NetInfo from '@react-native-community/netinfo';
 import axios from 'axios';
 import {fetchAuthors} from '../actions';
 
-export default function Post() {
+export default function PostDetails() {
   const dispatch = useDispatch();
 
   //Declare initial Loading Variables
@@ -48,14 +48,22 @@ export default function Post() {
     );
   } else {
     return (
-      <View>
-        <Text>Post Details Screen</Text>
-        <Text>Title: {posts[id].title}</Text>
-        <Text>Body: {posts[id].body}</Text>
-        <View style={{paddingVertical: 10}} />
-        <Text>Author: {author[posts[id].userId - 1].name},</Text>
-        <Text>AuthorEmail: {author[posts[id].userId - 1].email}</Text>
-      </View>
+      <>
+        <View style={styles.row}>
+          <Text style={styles.title}>{posts[id].title}</Text>
+        </View>
+        <View style={styles.row}>
+          <Text style={styles.description}>{posts[id].body}</Text>
+        </View>
+        <View style={styles.row}>
+          <Text style={styles.authorName}>
+            {author[posts[id].userId - 1].name},
+          </Text>
+          <Text style={styles.authorEmail}>
+            {author[posts[id].userId - 1].email}
+          </Text>
+        </View>
+      </>
     );
   }
 }
@@ -69,18 +77,26 @@ const styles = StyleSheet.create({
   },
 
   row: {
-    borderBottomWidth: 1,
-    borderColor: '#ccc',
     padding: 16,
   },
-
   title: {
     fontSize: 15,
     fontWeight: '600',
+    textAlign: 'center',
   },
-
   description: {
     marginTop: 5,
     fontSize: 14,
+  },
+  authorName: {
+    fontSize: 12,
+    lineHeight: 18,
+    color: 'grey',
+    fontWeight: '600',
+  },
+  authorEmail: {
+    fontSize: 12,
+    color: 'grey',
+    fontWeight: '600',
   },
 });

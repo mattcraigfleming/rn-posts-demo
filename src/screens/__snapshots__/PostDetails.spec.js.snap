@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Authors renders correctly 1`] = `null`;
+
+exports[`Testing Authors renders as expected 1`] = `ShallowWrapper {}`;
