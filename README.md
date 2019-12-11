@@ -55,11 +55,6 @@ You can run this app under dev mode on your iPhone device, through `Xcode`, foll
 
 ## Preview
 
-| <img src="https://raw.githubusercontent.com/lexmartinez/react-native-hotels-app/master/screenshots/screenshot-1.png" width="300"> | <img src="https://raw.githubusercontent.com/lexmartinez/react-native-hotels-app/master/screenshots/screenshot-2.png" width="300">  | <img src="https://raw.githubusercontent.com/lexmartinez/react-native-hotels-app/master/screenshots/screenshot-3.png" width="300">  | <img src="https://raw.githubusercontent.com/lexmartinez/react-native-hotels-app/master/screenshots/screenshot-4.png" width="300">  |
-| --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://raw.githubusercontent.com/lexmartinez/react-native-hotels-app/master/screenshots/screenshot-5.png" width="300"> | <img src="https://raw.githubusercontent.com/lexmartinez/react-native-hotels-app/master/screenshots/screenshot-6.png" width="300">  | <img src="https://raw.githubusercontent.com/lexmartinez/react-native-hotels-app/master/screenshots/screenshot-7.png" width="300">  | <img src="https://raw.githubusercontent.com/lexmartinez/react-native-hotels-app/master/screenshots/screenshot-8.png" width="300">  |
-| <img src="https://raw.githubusercontent.com/lexmartinez/react-native-hotels-app/master/screenshots/screenshot-9.png" width="300"> | <img src="https://raw.githubusercontent.com/lexmartinez/react-native-hotels-app/master/screenshots/screenshot-10.png" width="300"> | <img src="https://raw.githubusercontent.com/lexmartinez/react-native-hotels-app/master/screenshots/screenshot-11.png" width="300"> | <img src="https://raw.githubusercontent.com/lexmartinez/react-native-hotels-app/master/screenshots/screenshot-12.png" width="300"> |
-
-## License
-
-This project is licensed under MIT License - see the [LICENSE.md](https://github.com/lexmartinez/react-native-hotels-app/blob/master/LICENSE.md) file for details
+| <img src="https://github.com/mattcraigfleming/rn-posts-demo/blob/master/screenshots/Screenshot%202019-12-11%20at%2022.16.04.png?raw=true" width="300"> |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <img src="https://github.com/mattcraigfleming/rn-posts-demo/blob/master/screenshots/Screenshot%202019-12-11%20at%2022.16.34.png?raw=true" width="300"> |
