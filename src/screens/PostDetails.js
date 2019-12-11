@@ -15,7 +15,6 @@ export default function PostDetails() {
   //Access Redux Store State
   const postsReducer = useSelector(state => state.postsReducer);
   const {posts, author} = postsReducer;
-  console.log(author);
 
   // id - 1 as posts array is 0 based
   const id = useNavigationParam('id') - 1;

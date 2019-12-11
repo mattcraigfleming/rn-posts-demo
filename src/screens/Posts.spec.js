@@ -23,7 +23,6 @@ describe('Testing Posts', () => {
         context: {store: mockStore(initialState)},
       },
     ).dive();
-    console.log(wrapper.debug());
     expect(wrapper.dive()).toMatchSnapshot();
   });
 });
