@@ -23,7 +23,6 @@ $ yarn ios || react-native run-ios
 - [Dependencies](#dependencies)
 - [Developing](#developing)
 - [Preview](#preview)
-- [License](#license)
 
 ## Dependencies
 
