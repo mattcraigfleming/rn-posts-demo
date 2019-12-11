@@ -31,7 +31,7 @@ export default function PostDetails() {
   // Retrieve Author Data via ID
   const getAuthor = () => {
     setIsFetching(true);
-    let url = `http://jsonplaceholder.typicode.com/users`;
+    let url = 'http://jsonplaceholder.typicode.com/users';
     axios
       .get(url)
       .then(res => res.data)
