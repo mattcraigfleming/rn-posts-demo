@@ -8,7 +8,9 @@ import Navigator from './navigation/Navigator';
 const App = () => {
   return (
     <Provider store={store}>
-      <Navigator />
+      <PersistGate loading={null} persistor={persistor}>
+        <Navigator />
+      </PersistGate>
     </Provider>
   );
 };
