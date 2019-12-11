@@ -58,7 +58,5 @@ You can run this app under dev mode on your iPhone device, through `Xcode`, foll
 
 ## Preview
 
-| <img src="https://github.com/mattcraigfleming/rn-posts-demo/blob/master/screenshots/Screenshot%202019-12-11%20at%2022.16.04.png?raw=true" width="300">
-<img src="https://github.com/mattcraigfleming/rn-posts-demo/blob/master/screenshots/Screenshot%202019-12-11%20at%2022.16.34.png?raw=true" width="300"> |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| |
+ <img src="https://github.com/mattcraigfleming/rn-posts-demo/blob/master/screenshots/Screenshot%202019-12-11%20at%2022.16.04.png?raw=true" width="300">
+<img src="https://github.com/mattcraigfleming/rn-posts-demo/blob/master/screenshots/Screenshot%202019-12-11%20at%2022.16.34.png?raw=true" width="300">
