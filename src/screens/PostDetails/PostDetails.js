@@ -72,7 +72,7 @@ export default function PostDetails() {
           <Text style={styles.description}>{posts[id].body}</Text>
         </View>
         <View style={styles.row}>
-          <RenderAuthor />
+          {author ? <RenderAuthor /> : <Text>{''}</Text>}
         </View>
       </>
     );
