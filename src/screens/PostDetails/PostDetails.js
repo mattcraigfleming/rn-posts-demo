@@ -44,6 +44,19 @@ export default function PostDetails() {
     }
   };
 
+  const RenderAuthor = () => {
+    return (
+      <>
+        <Text style={styles.authorName}>
+          {author[posts[id].userId - 1].name},
+        </Text>
+        <Text style={styles.authorEmail}>
+          {author[posts[id].userId - 1].email}
+        </Text>
+      </>
+    );
+  };
+
   if (isFetching) {
     return (
       <View style={styles.activityIndicatorContainer}>
@@ -60,12 +73,7 @@ export default function PostDetails() {
           <Text style={styles.description}>{posts[id].body}</Text>
         </View>
         <View style={styles.row}>
-          <Text style={styles.authorName}>
-            {author[posts[id].userId - 1].name},
-          </Text>
-          <Text style={styles.authorEmail}>
-            {author[posts[id].userId - 1].email}
-          </Text>
+          <RenderAuthor />
         </View>
       </>
     );
