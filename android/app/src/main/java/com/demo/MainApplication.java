@@ -1,4 +1,4 @@
-package com.postsdemo;
+package com.demo;
 
 import android.app.Application;
 import android.content.Context;

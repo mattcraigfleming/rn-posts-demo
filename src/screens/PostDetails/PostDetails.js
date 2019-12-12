@@ -39,7 +39,6 @@ export default function PostDetails() {
         .finally(() => setIsFetching(false));
       return response;
     } catch (e) {
-      // Re-do Error handling
       console.log(e.message);
     }
   };
