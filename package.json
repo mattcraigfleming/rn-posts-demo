@@ -43,6 +43,7 @@
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.57.0",
     "react": "16.9.0",
+    "react-native-rename": "^2.4.1",
     "react-test-renderer": "^16.12.0"
   },
   "jest": {
@@ -51,7 +52,7 @@
       "node_modules/@react-native-community/async-storage/(?!(jest-)?react-native|react-navigation|react-navigation-redux-helpers|@react-navigation/.*)"
     ],
     "setupFiles": [
-      "/Users/area51/Desktop/tech-test/demo/src/setupTests.js",
+      "/Users/area51/Desktop/tech-test/rn-posts-demo/src/setupTests.js",
       "./node_modules/react-native-gesture-handler/jestSetup.js"
     ]
   }

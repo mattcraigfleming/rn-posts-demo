@@ -1,8 +1,8 @@
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
-import Posts from '../screens/Posts';
-import PostDetails from '../screens/PostDetails';
+import Posts from '../screens/Posts/Posts';
+import PostDetails from '../screens/PostDetails/PostDetails';
 
 const PostStack = createStackNavigator({
   Posts: {
