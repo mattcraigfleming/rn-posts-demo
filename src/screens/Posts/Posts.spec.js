@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 import configureStore from 'redux-mock-store';
-import App from '../App';
+import App from '../../App';
 import Posts from './Posts';
 
 jest.mock('react-native/Libraries/Lists/FlatList', () => 'FlatList');

@@ -1,18 +1,13 @@
 /* eslint-disable no-alert */
 import React, {useEffect, useState} from 'react';
-import {
-  FlatList,
-  StyleSheet,
-  View,
-  Text,
-  ActivityIndicator,
-} from 'react-native';
+import {FlatList, View, Text, ActivityIndicator} from 'react-native';
 import NetInfo from '@react-native-community/netinfo';
 import {useDispatch, useSelector} from 'react-redux';
 import {useNavigation} from 'react-navigation-hooks';
 import axios from 'axios';
-import {fetchPosts} from '../actions';
+import {fetchPosts} from '../../actions';
 import {TouchableOpacity} from 'react-native-gesture-handler';
+import styles from './styles';
 
 export default function Posts(props) {
   const dispatch = useDispatch();
@@ -67,38 +62,11 @@ export default function Posts(props) {
     );
   } else {
     return (
-      <View style={{backgroundColor: '#F5F5F5', paddingTop: 20}}>
-        <FlatList
-          data={posts}
-          renderItem={renderItem}
-          keyExtractor={(item, index) => `flat_${index}`}
-        />
-      </View>
+      <FlatList
+        data={posts}
+        renderItem={renderItem}
+        keyExtractor={(item, index) => `flat_${index}`}
+      />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  activityIndicatorContainer: {
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1,
-  },
-
-  row: {
-    borderBottomWidth: 1,
-    borderColor: '#ccc',
-    padding: 16,
-  },
-
-  title: {
-    fontSize: 15,
-    fontWeight: '600',
-  },
-
-  description: {
-    marginTop: 5,
-    fontSize: 14,
-  },
-});
